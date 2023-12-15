@@ -1,25 +1,20 @@
-.carousel-inner {
-  height: 70vh;
-  object-fit: cover;
-  overflow: hidden;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.carousel-item {
-  width: 100%;
-  height: 100%;
+.btn-close {
+  background-image: none;
+  /* background-color: red; */
+  color: white;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
 }
-
-.carousel-item > img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-@media screen and (max-width: 500px) {
-  .carousel,
-  .carousel-inner {
-    height: 400px;
-    object-fit: cover;
-    overflow: hidden;
-  }
+.btn-close::after,
+.btn-close::before {
+  display: none;
 }
